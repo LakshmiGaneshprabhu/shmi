@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">Food</h1>
+        <ul class="nav-links">
+            <li class="active" onclick="opentab('Home')"><a href="#">Home</a></li>
+            <li><a href="#" onclick="opentab('Offers')">Offers</a></li>
+            <li><a href="#"onclick="opentab('Offers')" >Dishes</a></li>
+            <li><a href="#"onclick="opentab('About')">About</a></li>
+            <li><a  class="ctn" href="#">Contact</a></li>
+
+        </ul>
+        <img src="images/menu-btn.png" alt="" class="menu-btn">
+
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Explore the New Taste</h2>
+            <div class="line"></div>
+            <h1>Madurai's Taste</h1>
+            <a href="#" class="ctn">Learn more</a>
+        </div>
+    </header>
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Offers</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+         <img src="images/uo.jpg" alt="">
+         <h4>Special offer up to 30%</h4>
+         <p> Avail this offer on all orders till Feb 10,2023.</p><br>
+         <a href="#" class="ctn">Learn more</a>
+            </div>
+            <div class="col">
+                <img src="images/pic.jpg" alt="">
+                <h4>Unlimited Dining</h4>
+                <p>Order above 2000 and get unlimited non-veg food!</p><br>
+                <a href="#" class="ctn">Learn more</a>
+                   </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="menu-content">
+        <h1>Finger licking cuisines</h1>
+        <div class="line"></div><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam alias, maxime minus harum, eveniet enim hic molestiae eaque at ratione ipsum praesentium sapiente m </p><br>
+<a href="#" class="ctn">Learn more</a>
+</div>
+    </section>
+
+<section class="dishes">
+    <div class="row">
+        <div class="col content-col">
+            <h1>Signature dishes of Madurai</h1><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium. Nemo neque voluptatum quaerat nostrum rerum quo fugit aliquid illum quam? Similique </p>
+            <br><a href="#" class="ctn">Learn more</a>
+        </div>
+        <div class="col image-col" >
+            <div class="image-gallery">
+                <img src="images/img1.jpg" alt="">
+                <img src="images/img5.jpg" alt="">
+                <img src="images/img7.jpg" alt="">
+                <img src="images/img8.jpg" alt="">
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+<p>24, Madurai's Taste, KK Nagar, Tamilnadu,India  | phone:45654745423 |  Email: mdutaste@gmail.com</p>
+<p>Copyright.C made by mdulax</p>
+</section>
+
+    <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navlinks=document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
